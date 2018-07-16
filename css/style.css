@@ -1,0 +1,680 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;	
+}
+
+html, body{
+	height: 100%;	
+}
+
+/**************** HEADER ******************/
+header{
+	padding: 20px 2%;
+}
+
+header .logo img{
+	float: left;
+	width: 236px;
+}
+
+nav.menu-mobile{
+	float: right;
+	width: 28px;
+	height: 28px;
+	margin-top: 7px;
+	cursor: pointer;
+	background: url('../images/menu-mobile.png');
+	background-size: 100% 100%;
+	display: none;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	z-index: 200;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	background-color: white;
+}
+
+nav.menu-mobile ul li{
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+header nav.menu-desktop{
+	float: right;
+}
+
+header nav.menu-desktop ul{
+	padding: 10px 0;
+	list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+	float: left;
+	font-size: 14px;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #a4a4a4;
+}
+
+
+/************** SECTION Mosaico **************/
+section .mosaico-single{
+	float: left;
+	width: calc(100% / 6);
+}
+
+section .img-m-single{
+	width: 100%;
+	padding-top:100%;
+	background: #d4d4d4;
+	border: 5px solid white;
+}
+
+section .img-m-single1{
+	width: 100%;
+	padding-top:100%;
+	border: 5px solid white;
+}
+
+section.mosaico #img1{
+	background: url('../images/img1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.mosaico #img2{
+	background: url('../images/img3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+section.mosaico #img3{
+	background: url('../images/img5.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.mosaico #img4{
+	background: url('../images/img2.png');
+	background-size: cover;
+	background-position: center;
+}
+section.mosaico #img5{
+	background: url('../images/img4.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.mosaico #img6{
+	background: url('../images/img6.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+/************** SECTION Servicos **************/
+
+section.servicos > .container{
+	max-width: 800px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: -30px;
+	text-align: center;
+}
+
+section.servicos > .container .box-servico{
+	background: url('../images/icone_dente.png');
+	background-size: 18px 18px;
+	background-position: center 98%; 
+	background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servico h2{
+	color: white;
+	font-weight: normal;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+section.servicos > .container .box-servico p{
+	color: white;
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+section.servicos > .container .box-servico:nth-of-type(1){
+	width: 30%;
+	padding: 30px 2%;
+	background-color: #576975;
+}
+
+section.servicos > .container .box-servico:nth-of-type(2){
+	width: 40%;
+	padding: 45px 2%;
+	background: #688293;
+}
+
+section.servicos > .container .box-servico:nth-of-type(3){
+	width: 30%;
+	padding: 30px 2%;
+	background-color: #576975;
+}
+
+
+
+/************** SECTION Perfil **************/
+section.perfil-cont{
+	padding: 40px 0;
+}
+
+section.perfil-cont .container{
+	max-width: 800px;
+}
+
+section.perfil-cont .perfil-wraper{
+	padding-top: 50%;
+	position: relative;
+}
+
+section.perfil-cont .perfil-wraper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+section.perfil-cont .img-perfil{
+	width: 40%;
+	height: 100%;
+	background: url('../images/img_perfil.png');
+	background-size: 100% 100%;
+}
+
+section.perfil-cont .txt-perfil{
+	width: 60%;
+	padding: 0 30px;
+}
+
+section.perfil-cont .txt-perfil h2{
+	color: #698293;
+	font-size: 18px;
+}
+
+section.perfil-cont .txt-perfil p{
+	margin-top: 8px;
+	color: #4b4b4b;
+	font-size: 14px;
+}
+
+
+/************** SECTION Videos **************/
+section.videos{
+	padding: 50px 0;
+}
+
+section.videos .box-video{
+	float: left;
+	width: 33.3%;
+	position: relative;
+	border: 7px solid white;
+	padding-top: calc( 33.3% * 0.6);
+}
+
+section.videos iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/************** SECTION Tratamentos **************/
+section.tratamentos{
+	padding: 70px 0;
+}
+
+section.tratamentos .trat-container{
+	float: left;
+	width: 33.3%;
+}
+
+section.tratamentos > h2{
+	font-size: 20px;
+	color: #698293;
+	text-align: center;
+}
+
+section.tratamentos > .container{
+	padding: 70px 0;
+}
+
+.trat-single{
+	padding: 20px;
+}
+
+.trat-single h2{
+	font-size:18px;
+	color: #737373;
+}
+
+.trat-single p{
+	padding: 10px 0;
+	font-size: 13px;
+	color: #a1a1a1;
+}
+
+
+/************** SECTION Tratamentos **************/
+section.depoimentos > h2{
+	font-size: 20px;
+	color: #698293;
+	text-align: center;
+}
+
+section.depoimentos .container{
+	padding: 40px 0;
+	max-width: 400px;
+}
+
+section.depoimentos .dep-single{
+	text-align: center;
+	width: 100%;
+	padding: 0 2%;
+}
+
+section.depoimentos .dep-single quote{
+	font-size: 15px;
+	color: #a1a1a1;
+}
+
+section.depoimentos .nome-dep{
+	padding: 19px 0;
+}
+
+section.depoimentos .nome-dep img{
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+}
+
+section.depoimentos .nome-dep span{
+	position: relative;
+	top: 6px;
+	font-size: 13px;
+	color: #a1a1a1;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/************** SECTION Social **************/
+section.social .instagram-chamada, .facebook-chamada{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+}
+
+section.social .instagram-chamada{
+	background: #98a5ae;
+}
+
+section.social .instagram-chamada p, .facebook-chamada p{
+	font-size: 13px;
+	line-height: 23px;
+	color: white;
+	padding: 10px 0;
+}
+
+section.social .facebook-chamada{
+	background: #576975;
+}
+
+section.social .soc-mosaico{
+	float: left;
+	width: 100%;
+}
+
+.img-mosaico-single{
+	float: left;
+	width: calc( 100% / 9 );
+	padding-top: calc( 100% / 9 );
+	background-color: lightblue;
+	border: 6px solid white;
+}
+
+section.social #img1{
+	background: url('../images/img1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img2{
+	background: url('../images/img3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img3{
+	background: url('../images/img5.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img4{
+	background: url('../images/img2.png');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img5{
+	background: url('../images/img4.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img6{
+	background: url('../images/img6.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img7{
+	background: url('../images/img1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img8{
+	background: url('../images/img3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+section.social #img9{
+	background: url('../images/img5.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+/************** SECTION Contato **************/
+section.contato{
+	padding: 60px 2%;
+}
+
+section.contato h2{
+	font-size: 20px;
+	color: #698293;
+	text-align: center;
+}
+
+section.contato form{
+	width: 100%;
+	max-width: 500px;
+	margin: 30px auto;
+}
+
+section.contato .form-wraper{
+	float: left;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+section.contato .w100{
+	width: 100%;
+}
+
+section.contato .w50{
+	width: 50%;
+}
+
+section.contato .form-wraper label{
+	font-size: 13px;
+	color: #a1a1a1;
+}
+
+section.contato .form-wraper input{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	margin-top: 8px;
+	border: 1px solid #dadada;
+}
+
+section.contato .form-wraper textarea{
+	width: 100%;
+	margin-top: 8px;
+	height: 121px;
+	padding: 15px;
+	resize: none;
+	border: 1px solid #dadada;
+}
+
+section.contato .form-wraper input[type=submit]{
+	width: 100px;
+	display: inline-block;
+	height: 35px;
+	border: 0;
+	background: #688293;
+	color: white;
+	cursor: pointer;
+}
+
+
+/************** FOOTER **************/
+footer{
+	padding: 40px 2%;
+	background: #688293;
+	text-align: center;
+}
+
+footer .container{
+	max-width: 1000px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+	padding: 15px;
+}
+
+footer .footer-block:nth-of-type(2){
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+
+.footer-block h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer-block p{
+	margin-top: 10px;
+	color: white;
+	font-size: 14px;
+}
+
+
+
+
+
+
+/************** MEDIA QUERIES **************/
+@media screen and (max-width: 1024px){
+	.img-mosaico-single{
+		width: calc( 100% / 6 );
+		padding-top: calc( 100% / 6 );
+	}
+
+	section.social .soc-mosaico > div:nth-of-type(1n+7){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+
+	section.servicos > .container{
+		/*
+		max-width: 800px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		top: -30px;
+		text-align: center;
+		*/
+		flex-direction: column;
+	}
+
+	section.servicos > .container .box-servico:nth-of-type(1){
+		width: 90%;
+		max-width: 350px;
+		padding: 30px 2%;
+	}
+
+	section.servicos > .container .box-servico:nth-of-type(2){
+		width: 90%;
+		max-width: 380px;
+		padding: 40px 2%;
+	}
+
+	section.servicos > .container .box-servico:nth-of-type(3){
+		width: 90%;
+		max-width: 350px;
+		padding: 30px 2%;
+	}
+
+	section.perfil-cont .perfil-wraper{
+		padding-top: 0;	
+	}
+
+	section.perfil-cont .perfil-wraper2{
+		/*
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		*/
+		height: auto;
+		position: static;
+		display: inline-block;
+		text-align: center;
+	}
+
+	section.perfil-cont .img-perfil{
+		width: 50%;
+		padding-top: 63%;
+		display: inline-block;
+		height: auto;
+		/*background: url('../images/img_perfil.png');
+		background-size: 100% 100%;*/
+	}
+
+	section.perfil-cont .txt-perfil{
+		display: inline-block;
+		text-align: justify;
+		width: 100%;
+		padding: 0 30px;
+	}
+
+	section.videos{
+		text-align: center; 
+	}
+
+	section.videos .box-video{
+		float: none;
+		width: 70%;
+		display: inline-block;
+		border: 7px solid white;
+		padding-top: calc(70% * 0.6);
+	}
+
+	section.videos div.box-video:nth-of-type(3){
+		display: none;
+	}
+
+	.img-mosaico-single{
+		width: calc( 100% / 4 );
+		padding-top: calc( 100% / 4 );
+	}
+
+	section.social .soc-mosaico > div:nth-of-type(1n+5){
+		display: none;
+	}
+
+	footer{
+		padding: 25px 2%;
+	}
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+		padding: 25px;
+	}
+
+	footer .footer-block:nth-of-type(2){
+		border-style: solid;
+    	border-width: 1px 0 1px 0;
+    	border-color: white;
+	}
+
+}
+
+
+@media screen and (max-width: 580px){
+	section.perfil-cont .img-perfil{
+		width: 80%;
+		padding-top: 93%;
+		/*background: url('../images/img_perfil.png');
+		background-size: 100% 100%;*/
+	}
+
+	section.videos .box-video{
+		width: 100%;
+		padding-top: calc(100% * 0.6);
+	}
+
+	section.contato .w50{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	header .logo img{
+		width: 200px;
+	}
+	.img-mosaico-single{
+		width: calc( 100% / 3 );
+		padding-top: calc( 100% / 3 );
+	}
+
+	section.social .soc-mosaico > div:nth-of-type(1n+4){
+		display: none;
+	}
+}
